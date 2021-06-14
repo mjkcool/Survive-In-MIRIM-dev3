@@ -73,6 +73,7 @@ public class Ch1_Quest1Manager : MonoBehaviour
         {
             if (!flag) //문제 틀린 직후
             {
+                Portrait.gameObject.SetActive(true);
                 InputF_1.gameObject.SetActive(true);
                 dialogueName.text = Qinfo_1.myName;
                 dialogueText.text = Qinfo_1.myText;
@@ -95,6 +96,7 @@ public class Ch1_Quest1Manager : MonoBehaviour
                 else //오답 입력시
                 {
                     InputF_1.gameObject.SetActive(false);
+                    Portrait.gameObject.SetActive(false);
                     dialogueName.text = "에러 발생";
                     dialogueText.text = "이곳은 아닌 것 같아.";
                     flag = false;
@@ -106,6 +108,7 @@ public class Ch1_Quest1Manager : MonoBehaviour
         {
             if (!flag) //문제 틀린 직후
             {
+                Portrait.gameObject.SetActive(true);
                 InputF_2.gameObject.SetActive(true);
                 dialogueName.text = Qinfo_2.myName;
                 dialogueText.text = null;
@@ -135,6 +138,7 @@ public class Ch1_Quest1Manager : MonoBehaviour
                     else //오답 입력시
                     {
                         InputF_2.gameObject.SetActive(false);
+                        Portrait.gameObject.SetActive(false);
                         dialogueName.text = "·•디버깅 중•·";
                         dialogueText.text = "잘못된 문장인가봐\n제대로 작동하지 않아";
                         flag = false;

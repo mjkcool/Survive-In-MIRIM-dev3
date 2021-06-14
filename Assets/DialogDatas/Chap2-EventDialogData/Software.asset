@@ -20,8 +20,8 @@ MonoBehaviour:
   - prologueId: 1
     prologueName: '[User]'
     portrait: {fileID: 21300000, guid: 7f0245b87204ddb45b1a35053aabf1c0, type: 3}
-    prologueText: "\uC6B0\uC2B9\uC774 \uBAA9\uD45C\uB2E4! \uC1A6\uACFC \uC6B0\uC2B9!
-      \uD5E5\uD5E5\xB7\xB7\xB7."
+    prologueText: "\uC6B0\uC2B9\uC774 \uBAA9\uD45C\uB2E4! \uC18C\uD504\uD2B8\uC6E8\uC5B4\uACFC
+      \uC6B0\uC2B9! \uD5E5\uD5E5\xB7\xB7\xB7."
   - prologueId: 2
     prologueName: '[F2]'
     portrait: {fileID: 21300000, guid: e1af8c275f4f61649b8e4b7a8bb05524, type: 3}

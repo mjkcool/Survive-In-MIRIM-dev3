@@ -76,6 +76,7 @@ public class Ch1_Quest5Manager : MonoBehaviour
         {
             if (!flag) //문제 틀린 직후
             {
+                Portrait.gameObject.SetActive(true);
                 Input_1.SetActive(true);
                 dialogueName.text = Qinfo_1.myName;
                 dialogueText.text = Qinfo_1.myText;
@@ -97,6 +98,7 @@ public class Ch1_Quest5Manager : MonoBehaviour
                 }
                 else //오답 입력시
                 {
+                    Portrait.gameObject.SetActive(true);
                     Input_1.SetActive(false);
                     dialogueName.text = "에러 발생";
                     dialogueText.text = "이곳이 아니야!";
@@ -109,6 +111,7 @@ public class Ch1_Quest5Manager : MonoBehaviour
         {
             if (!flag) //문제 틀린 직후
             {
+                Portrait.gameObject.SetActive(true);
                 Input_2.SetActive(true);
                 dialogueName.text = Qinfo_2.myName;
                 dialogueText.text = null;
@@ -137,6 +140,7 @@ public class Ch1_Quest5Manager : MonoBehaviour
                     }
                     else //오답 입력시
                     {
+                        Portrait.gameObject.SetActive(true);
                         Input_2.SetActive(false);
                         dialogueName.text = null;
                         dialogueText.text = "여전히 안보이네, 서둘러야 해!";

@@ -18,6 +18,8 @@ public class Ch2_Quest4Manager : MonoBehaviour
     public TextMeshProUGUI[] choices = new TextMeshProUGUI[5];
     public Sprite[] portraitImages = new Sprite[2];
     public Sprite[] characterPortrait = new Sprite[2];
+    public Sprite bgPortrait;
+    public Image background;
 
     private int answerNumber, dialogtotalcnt;
     public Queue<QuestBase.Info> QuestInfo;
@@ -67,6 +69,9 @@ public class Ch2_Quest4Manager : MonoBehaviour
         dialogtotalcnt = QuestInfo.Count;
         answerNumber = Random.Range(0, 4); //정답-매번 순서 섞임 / 정답 번호 부여
 
+        background.sprite = bgPortrait;
+        RectTransform rt2 = (RectTransform)background.transform;
+        rt2.sizeDelta = new Vector2(Screen.height, 0);
         setChoiceText();
         DequeueQuest();
     }

@@ -77,6 +77,7 @@ public class Ch1_Quest2Manager : MonoBehaviour
         {
             if (!flag) //문제 틀린 직후
             {
+                Portrait.gameObject.SetActive(true);
                 Input_1.SetActive(true);
                 dialogueName.text = Qinfo_1.myName;
                 dialogueText.text = Qinfo_1.myText;
@@ -98,6 +99,7 @@ public class Ch1_Quest2Manager : MonoBehaviour
                 }
                 else //오답 입력시
                 {
+                    Portrait.gameObject.SetActive(true);
                     InputF_1.text = null;
                     Input_1.SetActive(false);
                     dialogueName.text = "에러 발생";
@@ -111,6 +113,7 @@ public class Ch1_Quest2Manager : MonoBehaviour
         {
             if (!flag) //문제 틀린 직후
             {
+                Portrait.gameObject.SetActive(true);
                 Input_2.SetActive(true);
                 dialogueName.text = Qinfo_2.myName;
                 dialogueText.text = Qinfo_2.myText;
@@ -140,6 +143,7 @@ public class Ch1_Quest2Manager : MonoBehaviour
                     }
                     else //오답 입력시
                     {
+                        Portrait.gameObject.SetActive(true);
                         Input_2.SetActive(false);
                         dialogueName.text = "·•디버깅 중•·";
                         dialogueText.text = "오류가 그대로인걸!";

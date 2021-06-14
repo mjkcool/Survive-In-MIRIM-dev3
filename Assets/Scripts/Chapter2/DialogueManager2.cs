@@ -41,7 +41,7 @@ public class DialogueManager2 : MonoBehaviour
     public int department;
 
     private string[] major = { "소프트", "웹솔", "디자인"};
-    private string[] sub = { "", "빛이 나는 웹솔♬", "" };
+    private string[] sub = { "소프트! 소프트!", "빛이 나는 웹솔♬", "디자인! 디자인!" };
     private string[] F1 = { "시언희", "노재현", "유지영" };
     private string[] F2 = { "강수영", "차우림", "김라면" };
     private string[] F3 = { "김수형", "오자민", "곽노움" };
@@ -202,7 +202,7 @@ public class DialogueManager2 : MonoBehaviour
                         questStarter.start();
                         return;
                     }
-                    else if ((thisId.Equals(87)) && (!Qcompleted[3])) //퀘스트 4 시작
+                    else if ((thisId.Equals(86)) && (!Qcompleted[3])) //퀘스트 4 시작
                     {
                         DialogueBox.SetActive(false);
                         DialogBtn.questnum = 4;
@@ -234,16 +234,16 @@ public class DialogueManager2 : MonoBehaviour
                     if (bgSprite == null) //배경이미지가 없으면(과마다 따로 지정하는 배경이면)
                     {
                         if (thisId <= 4) bgSprite = outstandzone[department];
-                        else if (thisId == 5) bgSprite = lineup[department];
+                        else if (thisId == 5 || thisId == 10 || thisId == 11 || thisId == 12) bgSprite = lineup[department];
                         else if (thisId >= 6 && thisId <= 9) bgSprite = teachers[department];
                         else if(new int[] {53, 58, 59}.Contains(thisId)) bgSprite = jumpropeBg1[department];
                         else if(new int[] {55, 56, 57}.Contains(thisId)) bgSprite = jumpropeBg2[department];
                         else if (thisId == 52 || thisId == 54 || (thisId >= 68 && thisId <= 91)) bgSprite = cheerzone[department];
                         else if (thisId >= 110) bgSprite = endBg[department];
-                        
+
                     }
 
-                    if((int)bgSprite.bounds.size.x == (int)bgSprite.bounds.size.y)
+                    if ((int)bgSprite.bounds.size.x == (int)bgSprite.bounds.size.y)
                     {
                         RectTransform rt = (RectTransform)backgroundPortrait.transform;
                         rt.sizeDelta = new Vector2(Screen.height, 0);
@@ -253,6 +253,8 @@ public class DialogueManager2 : MonoBehaviour
                         RectTransform rt = (RectTransform)backgroundPortrait.transform;
                         rt.sizeDelta = new Vector2(Screen.width, 0);
                     }
+
+
 
                     backgroundPortrait.sprite = bgSprite;
                     
@@ -280,11 +282,6 @@ public class DialogueManager2 : MonoBehaviour
                     dialogueName.text = name;
 
                     Sprite p;
-                    int other = 0;
-                    if (department >= 3) other = department - 1;
-                    else other = department + 1;
-
-
 
                     //Array.Exists(language, element => element == "Ruby")
                     //인물 portrait
@@ -306,7 +303,7 @@ public class DialogueManager2 : MonoBehaviour
                         int other_ = 0;
                         if (department == 2) other_ = 1;
                         else other_ = department + 1;
-                        p = F3_1[other];
+                        p = F3_1[other_];
                     }
                     else p = info.portrait;
 

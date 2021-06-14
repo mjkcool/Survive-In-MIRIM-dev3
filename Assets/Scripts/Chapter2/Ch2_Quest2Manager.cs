@@ -17,6 +17,8 @@ public class Ch2_Quest2Manager : MonoBehaviour
     public GameObject ChoicesPack;
     public TextMeshProUGUI[] choices = new TextMeshProUGUI[5];
     public Sprite[] portraitImages = new Sprite[2];
+    public Sprite bgPortrait;
+    public Image background;
     public Sprite characterPortrait;
 
     private int answerNumber, dialogtotalcnt;
@@ -66,6 +68,7 @@ public class Ch2_Quest2Manager : MonoBehaviour
         dialogtotalcnt = QuestInfo.Count;
         answerNumber = Random.Range(0, 4);
 
+        background.sprite = bgPortrait;
         setChoiceText();
         DequeueQuest();
     }
