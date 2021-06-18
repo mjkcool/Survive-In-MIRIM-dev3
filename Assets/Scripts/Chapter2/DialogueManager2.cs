@@ -71,7 +71,7 @@ public class DialogueManager2 : MonoBehaviour
     private int[] pos_F1_3 = new int[] { 99, 115, 116 };
     private int[] pos_F1_4 = new int[] { 2, 3, 4, 16};
     private int[] pos_F2_1 = new int[] { 63, 76, 89, 113 };
-    private int[] pos_F2_2 = new int[] { 80, 85, 86 };
+    private int[] pos_F2_2 = new int[] { 80, 84, 86 };
     private int[] pos_F2_2_1 = new int[] { 59 };
     private int[] pos_F2_3 = new int[] { 109 };
     private int[] pos_F3_1 = new int[] { 34, 47, 48, 49, 98 };
