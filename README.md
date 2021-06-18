@@ -5,7 +5,7 @@
 
 ## Download and Play
 <img width="100" src="https://user-images.githubusercontent.com/53461080/110714357-91c72080-8246-11eb-820d-0fde29f4ce26.jpg"></img>
-<a target="blank_" href="https://play.google.com/store/apps/details?id=kr.hs.emirim.surviveinmirim"> <img width="170" src="https://user-images.githubusercontent.com/53461080/110714513-de126080-8246-11eb-9e35-add97a26accd.png"></img></a>↖Click it!
+<a target="blank_" href="https://play.google.com/store/apps/details?id=kr.hs.emirim.surviveinmirim"> <img width="170" src="https://user-images.githubusercontent.com/53461080/110714513-de126080-8246-11eb-9e35-add97a26accd.png"></img></a>
 
 
 ## 💡 Preview
