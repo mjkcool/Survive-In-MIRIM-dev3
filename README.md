@@ -3,7 +3,7 @@
 * latest version: 0.2.3
 
 ## Download and Play
-<img width="100" src="https://user-images.githubusercontent.com/53461080/125166240-a5bf6680-e1d5-11eb-8aef-3f0859de36f0.png"></img>
+<img width="100" src="https://user-images.githubusercontent.com/53461080/125166562-259a0080-e1d7-11eb-9ca4-5779de8f55dd.png"></img>
 <a target="blank_" href="https://play.google.com/store/apps/details?id=kr.hs.emirim.surviveinmirim"> <img width="170" src="https://user-images.githubusercontent.com/53461080/110714513-de126080-8246-11eb-9e35-add97a26accd.png"></img></a>
 
 
