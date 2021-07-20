@@ -1,6 +1,9 @@
 # 👾 미림에서 살아남기 ⚔
 ### Find out errors in MIRIM highschool!
 * latest version: 0.2.3
+* Repositories 
+  * Dev1: https://github.com/mjkcool/Survive-In-MIRIM-dev1
+  * Dev2: https://github.com/mjkcool/Survive-In-MIRIM-dev2
 
 ## Download and Play
 <img width="100" src="https://user-images.githubusercontent.com/53461080/125166562-259a0080-e1d7-11eb-9ca4-5779de8f55dd.png"></img>
