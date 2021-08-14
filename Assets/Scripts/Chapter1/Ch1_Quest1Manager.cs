@@ -195,7 +195,7 @@ public class Ch1_Quest1Manager : MonoBehaviour
             return false;
         }
 
-        //3. 글자들의 위치 순서 비교
+        //3. 글자들의 위치 순서 비교--수정필요: 같은 문자열 재등장시 논리오류 발생
         int pos = -1, nowpos;
         for(int i=0; i<raw_list.Length; i++)
         {
